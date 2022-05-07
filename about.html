@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="/public/css/styless.css">
+  <script src="https://kit.fontawesome.com/9ddc981496.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo"> logo </div>
+
+    <li class="nav_icon"><i class="fa-solid fa-bars"></i></li>
+
+    <div class="list">
+      <a href="home.html"><li>Home</li></a>
+      <a href="about.html"><li>About Us</li></a>
+      <a href="join.html"><li>Join Us</li></a>
+      <a href="collab.html"><li>Our Collaboration</li></a>
+      <a href="contact.html"><li>Contact Us</li></a>
+    </div>
+  </nav>
+  
+
+  <script>
+    const toggle = document.getElementsByClassName("nav_icon")[0];
+    const list_items = document.getElementsByClassName("list")[0];
+
+    toggle.addEventListener('click', () =>{
+      list_items.classList.toggle('active');
+    })
+  </script>
+
+</body>
+</html>
